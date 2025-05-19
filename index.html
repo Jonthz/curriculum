@@ -59,6 +59,65 @@
             width: 100%;
             height: 100%;
         }
+        form {
+      max-width: 600px;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    fieldset {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .reference {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.reference blockquote {
+    font-style: italic;
+    margin: 0 0 15px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ddd;
+}
+
+.reference p {
+    margin: 0;
+}
     </style>
 </head>
 <body>
@@ -77,6 +136,7 @@
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#referencias">Referencias</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -99,6 +159,7 @@
                     allowfullscreen>
                 </iframe>
             </div>
+            <p>Inspirado por el trabajo de expertos en el campo. Para conocer más sobre las tendencias actuales en análisis de datos, visita <a href="https://www.kaggle.com" target="_blank" rel="noopener">Kaggle</a>, la plataforma líder en ciencia de datos.</p>
         </section>
         
         <section id="experiencia">
@@ -138,6 +199,14 @@
                 <p>Staff en WiDS ESPOL 2024</p>
                 <p>Staff en eventos del club TAWS</p>
             </div>
+            <h3>METODOLOGÍA DE TRABAJO</h3>
+    <ol>
+        <li>Análisis de requerimientos</li>
+        <li>Diseño de la solución</li>
+        <li>Implementación y desarrollo</li>
+        <li>Pruebas y optimización</li>
+        <li>Despliegue y mantenimiento</li>
+    </ol>
         </section>
         
         <section id="educacion">
@@ -149,6 +218,7 @@
             <h3>CERTIFICADOS</h3>
             <p>Cisco - Introducción a las redes (2024)<br>
             Datacamp - Data Analyst Associate (2024)</p>
+           
         </section>
         
         <section id="habilidades">
@@ -181,6 +251,67 @@
             
             <h3>IDIOMAS</h3>
             <p>Inglés Intermedio</p>
+            <h3>HERRAMIENTAS</h3>
+    <ul>
+        <li>VS Code y PyCharm</li>
+        <li>Git y GitHub</li>
+        <li>Docker</li>
+        <li>AWS y GCP</li>
+    </ul>
+            <h3>NIVEL DE COMPETENCIAS TÉCNICAS</h3>
+<table>
+    <tr>
+        <th>Tecnología</th>
+        <th>Nivel</th>
+        <th>Experiencia</th>
+    </tr>
+    <tr>
+        <th>Python</th>
+        <td>Avanzado</td>
+        <td>2 años</td>
+    </tr>
+    <tr>
+        <th>SQL</th>
+        <td>Intermedio</td>
+        <td>1 año</td>
+    </tr>
+    <tr>
+        <th>JavaScript</th>
+        <td>Básico</td>
+        <td>6 meses</td>
+    </tr>
+</table>
+        </section>
+        
+        <section id="referencias">
+            <h2>Referencias Profesionales</h2>
+            
+            <div class="reference">
+                <blockquote>
+                    "Jonathan demuestra una excelente capacidad para resolver problemas de desarrollo móvil y su enfoque práctico ha sido invaluable para nuestros proyectos."
+                </blockquote>
+                <p><span>Jorge Bustamante, Ing</span><br> <!-- borrar los br y manejarlo en css, por el tema de semantica, tambien las negritas del span, en lugar de usar strong-->
+                Gerente de Tecnologa en Broadnet<br>
+                Supervisó mi trabajo en desarrollo móvil con Java y Android, donde implementé soluciones eficientes y contribuí a mejorar la experiencia de usuario en proyectos corporativos.</p>
+            </div>
+            
+            <div class="reference">
+                <blockquote>
+                    "Su capacidad analítica y metodología de investigación han sido fundamentales para el éxito de nuestro proyecto académico que pronto será publicado."
+                </blockquote>
+                <p><strong>Verónica Duarte, PhD.</strong><br>
+                Investigadora Principal - Facultad de Ciencias de la Computación<br>
+                Colaboré como asistente de investigación en proyectos de ciencia de datos aplicada, contribuyendo con análisis estadístico y desarrollo de modelos de machine learning.</p>
+            </div>
+            
+            <div class="reference">
+                <blockquote>
+                    "Jonathan tiene un gran compromiso con la comunidad tecnológica y ha demostrado excelentes habilidades técnicas y de liderazgo en los eventos organizados."
+                </blockquote>
+                <p><strong>Carmen Vaca, PhD.</strong><br>
+                Coordinadora del club TAWS - ESPOL<br>
+                He colaborado activamente en la organización de talleres, hackathons y eventos de divulgación tecnológica, aportando conocimientos técnicos y habilidades de gestión.</p>
+            </div>
         </section>
         
         <section id="contacto">
@@ -189,6 +320,48 @@
             Email: jonpzamb@espol.edu.ec<br>
             LinkedIn: <a href="https://www.linkedin.com/in/jonathan-zamb">www.linkedin.com/in/jonathan-zamb</a><br>
             GitHub: <a href="https://github.com/Jonthz">github.com/Jonthz</a></p>
+                <h3>Formulario de Contacto</h3>
+                <form action="/enviar-contacto" method="POST">
+    
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="especialidad">Especialidad técnica:</label>
+    <select id="especialidad" name="especialidad" required>
+      <option value="">Seleccione una opción</option>
+      <option value="frontend">Desarrollo Frontend</option>
+      <option value="backend">Desarrollo Backend</option>
+      <option value="fullstack">Desarrollo Full Stack</option>
+      <option value="devops">DevOps / Infraestructura</option>
+      <option value="data">Ciencia de Datos / IA</option>
+      <option value="seguridad">Ciberseguridad</option>
+    </select>
+
+    <fieldset>
+      <legend>¿Cómo desea ser contactado?</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="contacto" value="email" required> Correo electrónico</label>
+        <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
+        <label><input type="radio" name="contacto" value="github" required> GitHub</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tipos de colaboración que le interesan:</legend>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="colaboracion[]" value="remoto" required> Trabajo remoto</label>
+        <label><input type="checkbox" name="colaboracion[]" value="presencial" required> Trabajo presencial</label>
+        <label><input type="checkbox" name="colaboracion[]" value="freelance" required> Freelance / Proyectos</label>
+        <label><input type="checkbox" name="colaboracion[]" value="open_source" required> Proyectos Open Source</label>
+      </div>
+    </fieldset>
+
+    <label for="mensaje">Mensaje o presentación personal:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntenos brevemente sobre su experiencia, tecnologías que maneja o lo que desea destacar." required></textarea>
+
+    <button type="submit">Enviar contacto</button>
+
+  </form>
             
             <div class="map-container">
                 <h3>Ubicación</h3>
