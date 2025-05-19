@@ -40,6 +40,25 @@
         .project h3, .skill-category h3 {
             margin-bottom: 5px;
         }
+        .map-container {
+            text-align: center;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +85,20 @@
         <section id="perfil">
             <h2>Perfil Profesional</h2>
             <p>Apasionado por el uso de Machine Learning y el análisis de datos para la toma de decisiones basada en información. Experiencia en clasificación de datos, visualización de información y optimización de bases de datos. Habilidades en modelado predictivo, integración de sistemas y despliegue de dashboards interactivos.</p>
+            <h3>Video favorito</h3>
+                <p>Un video que me inspira y refleja mi pasión por la tecnología y el aprendizaje continuo. Creditos: 3blue1brown</p>
+               
+            <div class="video-container">
+                 <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/wjZofJX0v4M" 
+                    title="YouTube video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </section>
         
         <section id="experiencia">
@@ -156,11 +189,25 @@
             Email: jonpzamb@espol.edu.ec<br>
             LinkedIn: <a href="https://www.linkedin.com/in/jonathan-zamb">www.linkedin.com/in/jonathan-zamb</a><br>
             GitHub: <a href="https://github.com/Jonthz">github.com/Jonthz</a></p>
+            
+            <div class="map-container">
+                <h3>Ubicación</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0184808285875!2d-79.96731542412513!3d-2.1480920973813466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716084844862!5m2!1ses!2sec" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0; margin-bottom: 20px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
     </main>
     
     <footer>
         <p>&copy; 2025 Jonathan Zambrano. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
