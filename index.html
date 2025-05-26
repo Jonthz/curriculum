@@ -174,33 +174,39 @@
         
         <section id="referencias">
             <h2 class="subtitle">Referencias Profesionales</h2>
-            
-            <div class="reference">
+
+            <article>
                 <blockquote>
                     "Jonathan demuestra una excelente capacidad para resolver problemas de desarrollo móvil y su enfoque práctico ha sido invaluable para nuestros proyectos."
                 </blockquote>
-                <p><span>Jorge Bustamante, Ing</span><br> <!-- borrar los br y manejarlo en css, por el tema de semantica, tambien las negritas del span, en lugar de usar strong-->
-                Gerente de Tecnologa en Broadnet<br>
-                Supervisó mi trabajo en desarrollo móvil con Java y Android, donde implementé soluciones eficientes y contribuí a mejorar la experiencia de usuario en proyectos corporativos.</p>
-            </div>
-            
-            <div class="reference">
+                <p>
+                    <span>Jorge Bustamante, Ing</span><br>
+                    Gerente de Tecnología en Broadnet<br>
+                    Supervisó mi trabajo en desarrollo móvil con Java y Android, donde implementé soluciones eficientes y contribuí a mejorar la experiencia de usuario en proyectos corporativos.
+                </p>
+            </article>
+
+            <article>
                 <blockquote>
                     "Su capacidad analítica y metodología de investigación han sido fundamentales para el éxito de nuestro proyecto académico que pronto será publicado."
                 </blockquote>
-                <p><strong>Verónica Duarte, PhD.</strong><br>
-                Investigadora Principal - Facultad de Ciencias de la Computación<br>
-                Colaboré como asistente de investigación en proyectos de ciencia de datos aplicada, contribuyendo con análisis estadístico y desarrollo de modelos de machine learning.</p>
-            </div>
-            
-            <div class="reference">
+                <p>
+                    <span>Verónica Duarte, PhD.</span><br>
+                    Investigadora Principal - Facultad de Ciencias de la Computación<br>
+                    Colaboré como asistente de investigación en proyectos de ciencia de datos aplicada, contribuyendo con análisis estadístico y desarrollo de modelos de machine learning.
+                </p>
+            </article>
+
+            <article>
                 <blockquote>
                     "Jonathan tiene un gran compromiso con la comunidad tecnológica y ha demostrado excelentes habilidades técnicas y de liderazgo en los eventos organizados."
                 </blockquote>
-                <p><strong>Carmen Vaca, PhD.</strong><br>
-                Coordinadora del club TAWS - ESPOL<br>
-                He colaborado activamente en la organización de talleres, hackathons y eventos de divulgación tecnológica, aportando conocimientos técnicos y habilidades de gestión.</p>
-            </div>
+                <p>
+                    <span>Carmen Vaca, PhD.</span><br>
+                    Coordinadora del club TAWS - ESPOL<br>
+                    He colaborado activamente en la organización de talleres, hackathons y eventos de divulgación tecnológica, aportando conocimientos técnicos y habilidades de gestión.
+                </p>
+            </article>
         </section>
         
         <section id="contacto">
@@ -209,49 +215,44 @@
             Email: jonpzamb@espol.edu.ec<br>
             LinkedIn: <a href="https://www.linkedin.com/in/jonathan-zamb">www.linkedin.com/in/jonathan-zamb</a><br>
             GitHub: <a href="https://github.com/Jonthz">github.com/Jonthz</a></p>
-                <h3>Formulario de Contacto</h3>
-                <form action="/enviar-contacto" method="POST">
-    
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" required>
+            <h3>Formulario de Contacto</h3>
+            <form action="/enviar-contacto" method="POST">
 
-    <label for="especialidad">Especialidad técnica:</label>
-    <select id="especialidad" name="especialidad" required>
-      <option value="">Seleccione una opción</option>
-      <option value="frontend">Desarrollo Frontend</option>
-      <option value="backend">Desarrollo Backend</option>
-      <option value="fullstack">Desarrollo Full Stack</option>
-      <option value="devops">DevOps / Infraestructura</option>
-      <option value="data">Ciencia de Datos / IA</option>
-      <option value="seguridad">Ciberseguridad</option>
-    </select>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-    <fieldset>
-      <legend>¿Cómo desea ser contactado?</legend>
-      <div class="radio-group">
-        <label><input type="radio" name="contacto" value="email" required> Correo electrónico</label>
-        <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
-        <label><input type="radio" name="contacto" value="github" required> GitHub</label>
-      </div>
-    </fieldset>
+                <label for="especialidad">Especialidad técnica:</label>
+                <select id="especialidad" name="especialidad" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="frontend">Desarrollo Frontend</option>
+                    <option value="backend">Desarrollo Backend</option>
+                    <option value="fullstack">Desarrollo Full Stack</option>
+                    <option value="devops">DevOps / Infraestructura</option>
+                    <option value="data">Ciencia de Datos / IA</option>
+                    <option value="seguridad">Ciberseguridad</option>
+                </select>
 
-    <fieldset>
-      <legend>Tipos de colaboración que le interesan:</legend>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="colaboracion[]" value="remoto" required> Trabajo remoto</label>
-        <label><input type="checkbox" name="colaboracion[]" value="presencial" required> Trabajo presencial</label>
-        <label><input type="checkbox" name="colaboracion[]" value="freelance" required> Freelance / Proyectos</label>
-        <label><input type="checkbox" name="colaboracion[]" value="open_source" required> Proyectos Open Source</label>
-      </div>
-    </fieldset>
+                <fieldset>
+                    <legend>¿Cómo desea ser contactado?</legend>
+                    <label><input type="radio" name="contacto" value="email" required> Correo electrónico</label>
+                    <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
+                    <label><input type="radio" name="contacto" value="github" required> GitHub</label>
+                </fieldset>
 
-    <label for="mensaje">Mensaje o presentación personal:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntenos brevemente sobre su experiencia, tecnologías que maneja o lo que desea destacar." required></textarea>
+                <fieldset>
+                    <legend>Tipos de colaboración que le interesan:</legend>
+                    <label><input type="checkbox" name="colaboracion[]" value="remoto" required> Trabajo remoto</label>
+                    <label><input type="checkbox" name="colaboracion[]" value="presencial" required> Trabajo presencial</label>
+                    <label><input type="checkbox" name="colaboracion[]" value="freelance" required> Freelance / Proyectos</label>
+                    <label><input type="checkbox" name="colaboracion[]" value="open_source" required> Proyectos Open Source</label>
+                </fieldset>
 
-    <button type="submit">Enviar contacto</button>
+                <label for="mensaje">Mensaje o presentación personal:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntenos brevemente sobre su experiencia, tecnologías que maneja o lo que desea destacar." required></textarea>
 
-  </form>
-            
+                <button type="submit">Enviar contacto</button>
+
+            </form>
             <div class="map-container">
                 <h3>Ubicación</h3>
                 <iframe 

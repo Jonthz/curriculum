@@ -15,8 +15,13 @@
             margin: 20px 0;
         }
         nav > ul {
-            list-style-type: none;
-            padding: 0;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio equitativamente */
+    flex-direction: row;            /* Organiza en fila horizontal */
+    align-items: center;            /* Centra verticalmente los hijos */
+    gap: 1rem;                      /* Espacio uniforme entre hijos */
+    list-style-type: none;
+    padding: 0;
         }
         nav ul li {
             display: inline;
@@ -158,4 +163,33 @@ body {
 .subtitle {
     color: rgb(151 156 165 / 0.89);
     text-transform: uppercase;
+}
+section > form {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho */
+    gap: 1rem;                  /* Espacio uniforme entre filas y columnas */
+}
+
+#referencias {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+#referencias > h2 {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+#referencias > article {
+    /* Si hay tres artículos, se distribuyen equitativamente */
+    display: block;
+}
+
+#referencias {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#referencias > h2 {
+    grid-column: 1 / 4;
 }
