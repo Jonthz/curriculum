@@ -1,0 +1,161 @@
+/* Importar las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Droid+Serif&family=Oswald&family=Signika+Negative&display=swap');
+/* Resto del CSS... */
+
+.header {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav > ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+      /*  section {
+            margin: 30px 0;
+            padding: 0 20px;
+        }*/
+        section {
+    /* Borde gris azulado claro */
+    border: 0.2pt solid #cedddd;
+    
+    /* Borde redondeado de 5 píxeles */
+    border-radius: 5px;
+    
+    /* Sombra */
+    box-shadow: 3px 3px 1px 0 rgba(235, 234, 234, 0.6);
+    
+    /* Márgenes en los diferentes lados */
+    margin: 4px 2px 8px 2px; /* arriba, derecha, abajo, izquierda */
+    
+    /* Separación entre borde y contenido */
+    padding: 1.5% 0.8%; /* vertical, horizontal */
+    
+    /* Modificación específica del margen inferior */
+    margin-bottom: 1.2rem;
+}
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        footer p {
+            text-align: right;
+            font-style: italic;
+        }
+        .project, .skill-category {
+            margin-bottom: 20px;
+        }
+        .project h3, .skill-category h3 {
+            margin-bottom: 5px;
+        }
+        .map-container {
+            text-align: center;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        form {
+      max-width: 600px;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    fieldset {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .reference {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.reference blockquote {
+    font-style: italic;
+    margin: 0 0 15px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ddd;
+}
+
+.reference p {
+    margin: 0;
+}
+
+h1, h2, h3 { font-family: "Oswald", sans-serif; }
+h4, p { font-family: "Arsenal", serif; }
+nav { font-family: "Signika Negative", sans-serif; }
+
+body {
+  font-family: "Signika Negative", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Selector por id para photo */
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+/* Selector por clase para subtitle */
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}

@@ -7,118 +7,7 @@
     <meta name="description" content="Professional curriculum vitae showcasing my skills, experience, and qualifications">
     <meta name="author" content="Jonathan Zambrano">
     <title>My Professional CV</title>
-    <style>
-        .header {
-            text-align: center;
-            margin-top: 40px;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        section {
-            margin: 30px 0;
-            padding: 0 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .project, .skill-category {
-            margin-bottom: 20px;
-        }
-        .project h3, .skill-category h3 {
-            margin-bottom: 5px;
-        }
-        .map-container {
-            text-align: center;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* Proporción 16:9 */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            margin: 20px 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        form {
-      max-width: 600px;
-    }
-
-    label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-
-    input[type="text"],
-    select,
-    textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-    }
-
-    fieldset {
-      margin-top: 1rem;
-      padding: 1rem;
-      border: 1px solid #ccc;
-    }
-
-    legend {
-      font-weight: bold;
-    }
-
-    .checkbox-group,
-    .radio-group {
-      display: flex;
-      flex-direction: column;
-      margin-top: 0.5rem;
-    }
-
-    button {
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    .reference {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.reference blockquote {
-    font-style: italic;
-    margin: 0 0 15px 0;
-    padding: 10px 20px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #ddd;
-}
-
-.reference p {
-    margin: 0;
-}
-    </style>
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
     <header class="header">
@@ -126,7 +15,7 @@
         <p><strong>ESTUDIANTE DE ING. EN CIENCIAS DE LA COMPUTACIÓN</strong></p>
         
         <div class="profile-image">
-            <img src="images/1695951545602.jpeg" alt="Profile Photo" width="150" height="150">        
+            <img src="images/1695951545602.jpeg" id="photo" alt="Profile Photo" width="150" height="150">        
         </div>
     </header>
     
@@ -143,7 +32,7 @@
     
     <main>
         <section id="perfil">
-            <h2>Perfil Profesional</h2>
+            <h2 class="subtitle">Perfil Profesional</h2>
             <p>Apasionado por el uso de Machine Learning y el análisis de datos para la toma de decisiones basada en información. Experiencia en clasificación de datos, visualización de información y optimización de bases de datos. Habilidades en modelado predictivo, integración de sistemas y despliegue de dashboards interactivos.</p>
             <h3>Video favorito</h3>
                 <p>Un video que me inspira y refleja mi pasión por la tecnología y el aprendizaje continuo. Creditos: 3blue1brown</p>
@@ -163,7 +52,7 @@
         </section>
         
         <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
+            <h2 class="subtitle">Experiencia Laboral</h2>
             
             <h3>PROYECTOS</h3>
             <div class="project">
@@ -210,7 +99,7 @@
         </section>
         
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <p><strong>Escuela Superior Politécnica del Litoral</strong><br>
             Ingeniería en computación<br>
             2022 - En curso</p>
@@ -222,7 +111,7 @@
         </section>
         
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             
             <div class="skill-category">
                 <h3>Análisis y Visualización:</h3>
@@ -284,7 +173,7 @@
         </section>
         
         <section id="referencias">
-            <h2>Referencias Profesionales</h2>
+            <h2 class="subtitle">Referencias Profesionales</h2>
             
             <div class="reference">
                 <blockquote>
@@ -315,7 +204,7 @@
         </section>
         
         <section id="contacto">
-            <h2>Información de Contacto</h2>
+            <h2 class="subtitle">Información de Contacto</h2>
             <p>Teléfono: +593 93 969 6606<br>
             Email: jonpzamb@espol.edu.ec<br>
             LinkedIn: <a href="https://www.linkedin.com/in/jonathan-zamb">www.linkedin.com/in/jonathan-zamb</a><br>
